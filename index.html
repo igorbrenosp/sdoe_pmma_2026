@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SDOE Study — Simulado PMMA 2026 — 120 itens Cebraspe</title>
+<meta content="Simulado interativo PMMA 2026, Soldado QP, 120 itens certo/errado, com correção Cebraspe e conteúdo conforme edital retificado." name="description"/>
+<style>
+:root{--bg:#eef2f7;--card:#fff;--ink:#101828;--muted:#667085;--line:#d0d5dd;--blue:#2563eb;--blue2:#dbeafe;--green:#16a34a;--red:#dc2626;--amber:#d97706;--navy:#0b1220;--shadow:0 12px 35px rgba(15,23,42,.08)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+button,input{font:inherit}
+.container{max-width:1180px;margin:auto;padding:0 18px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar .inner{display:flex;align-items:center;gap:14px;padding:12px 18px;max-width:1180px;margin:auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.brandmark{width:36px;height:36px;border-radius:12px;background:#111827;border:1px solid #334155;display:grid;place-items:center;color:#38bdf8;font-weight:900}
+.spacer{flex:1}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:700;transition:.18s transform,.18s box-shadow,.18s background}
+.btn:hover{transform:translateY(-1px);box-shadow:0 7px 20px rgba(0,0,0,.08)}
+.btn.dark{background:#111827;color:#fff;border-color:#111827}
+.btn.blue{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn.ghost{background:transparent;color:#fff;border-color:#334155}
+.btn.small{padding:8px 10px;border-radius:10px;font-size:13px}
+.timer{font-variant-numeric:tabular-nums;background:#fff;color:#111827;border-radius:12px;padding:8px 12px;font-weight:900;min-width:92px;text-align:center}
+.hero{padding:34px 0 22px}
+.hero-card{background:linear-gradient(135deg,#0b1220,#111827 55%,#1d4ed8);color:#fff;border-radius:28px;padding:28px;box-shadow:var(--shadow);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:center}
+.hero h1{font-size:clamp(30px,5vw,54px);line-height:1.02;margin:0 0 16px;letter-spacing:-1.8px}
+.hero p{color:#cbd5e1;max-width:700px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:7px 10px;border-radius:999px;font-size:13px}
+.section{padding:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.card.pad{padding:22px}
+.notice{border-left:5px solid var(--blue);background:#eff6ff;padding:16px 18px;border-radius:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px;vertical-align:top}
+.table th{background:#f8fafc}
+.sticky-nav{position:sticky;top:76px;z-index:20;background:rgba(238,242,247,.92);backdrop-filter:blur(10px);padding:10px 0;border-bottom:1px solid #dbe1e8}
+.navline{display:flex;gap:8px;overflow:auto;padding-bottom:2px}
+.navline a{white-space:nowrap;text-decoration:none;color:#334155;background:#fff;border:1px solid var(--line);padding:7px 10px;border-radius:999px;font-size:12px;font-weight:800}
+.exam-section{margin:18px 0 34px}
+.exam-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:14px}
+.exam-head h2{margin:0;font-size:26px;letter-spacing:-.6px}
+.exam-head .meta{color:var(--muted);font-size:13px}
+.stimulus{background:#fcfcfd;border:1px solid var(--line);padding:18px;border-radius:16px;margin:12px 0 16px;box-shadow:0 3px 12px rgba(15,23,42,.04)}
+.stimulus h3{margin:0 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:#475467}
+.svg-art{width:100%;height:auto;display:block;margin:10px 0}
+.q{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin:12px 0;box-shadow:0 5px 20px rgba(15,23,42,.04)}
+.q-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.qnum{font-weight:950;font-size:20px;min-width:46px}
+.tag{font-size:12px;font-weight:800;background:#f1f5f9;color:#334155;border:1px solid #e2e8f0;padding:5px 8px;border-radius:999px}
+.qtext{font-family:Georgia,'Times New Roman',serif;font-size:17px}
+.answers{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.answer{position:relative;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);cursor:pointer;background:#fff;font-weight:900}
+.answer input{accent-color:var(--blue);width:18px;height:18px}
+.answer:has(input:checked){border-color:#93c5fd;background:#eff6ff}
+.answer.blank{color:#667085;background:#f8fafc}
+.q.correct{border-color:#86efac;background:#f0fdf4}
+.q.wrong{border-color:#fca5a5;background:#fff1f2}
+.q.blankmark{border-color:#cbd5e1;background:#f8fafc}
+.feedback{display:none;margin-top:12px;padding:12px 14px;border-radius:12px;background:#f8fafc;border:1px dashed #cbd5e1;font-size:14px}
+.show-feedback .feedback{display:block}
+.gabarito{display:none}
+.gabarito.show{display:block}
+.g-item{border-bottom:1px solid var(--line);padding:12px 0}
+.g-item:last-child{border-bottom:none}
+.g-judge{font-weight:900}
+.g-judge.c{color:var(--green)} .g-judge.e{color:var(--red)}
+.score-card{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+.score-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.score-box .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:900}
+.score-box .value{font-size:30px;font-weight:950;margin-top:2px}
+.status{margin-top:10px;font-weight:800}
+.answer-sheet{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.as-item{border:1px solid var(--line);background:#fff;padding:8px;border-radius:12px;text-align:center;font-variant-numeric:tabular-nums;font-size:12px}
+.as-pair{display:flex;justify-content:center;gap:8px;margin-top:5px}
+.footer{margin-top:46px;padding:34px 0 70px;background:#0b1220;color:#cbd5e1}
+.footer a{color:#93c5fd}
+.sdoe-wrap{max-width:900px;margin:18px auto}
+.print-note{font-size:12px;color:#98a2b3}
+@media (max-width:900px){.hero-grid,.grid2{grid-template-columns:1fr}.score-card{grid-template-columns:repeat(2,1fr)}.answer-sheet{grid-template-columns:repeat(3,1fr)}.topbar .inner{flex-wrap:wrap}.spacer{display:none}.timer{order:3}}
+@media print{body{background:white}.topbar,.sticky-nav,.controls,.no-print{display:none!important}.hero-card{box-shadow:none;break-inside:avoid}.q{box-shadow:none;break-inside:avoid}.card{box-shadow:none}.section{padding:8px 0}.footer{background:#fff;color:#111827;border-top:1px solid #bbb}.footer a{color:#111827}}
+</style>
+</head>
+<body>
+<div class="topbar controls"><div class="inner">
+<div class="brand"><div class="brandmark">S</div><div>SDOE Study · PMMA 2026</div></div>
+<div class="spacer"></div>
+<div class="timer" id="timer">03:30:00</div>
+<button class="btn ghost small" id="timerBtn" onclick="toggleTimer()">Começar</button>
+<button class="btn ghost small" onclick="scrollToTop()">Topo</button>
+<button class="btn ghost small" onclick="window.print()">Imprimir</button>
+</div></div>
+<main class="container">
+<section class="hero">
+<div class="hero-card">
+<div class="hero-grid">
+<div>
+<div class="pill" style="display:inline-flex">SIMULADO PÓS-RETIFICAÇÃO • 30/09/2026</div>
+<h1>PMMA 2026<br/><span style="color:#93c5fd">120 itens · Cebraspe</span></h1>
+<p>Soldado do Quadro de Praças (QP) · Certo/Errado · possibilidade de deixar itens em branco · correção automática com +1 / −1 / 0.</p>
+<div class="pills"><span class="pill">P1 · 50 itens</span><span class="pill">P2 · 70 itens</span><span class="pill">3h30</span><span class="pill">Modo prova</span></div>
+</div>
+<div><svg aria-label="Painel gráfico PMMA 2026 e SDOE Study" class="svg-art" role="img" viewbox="0 0 720 320">
+<defs><lineargradient id="g1" x1="0" x2="1"><stop offset="0%" stop-color="#111827"></stop><stop offset="100%" stop-color="#2563eb"></stop></lineargradient></defs>
+<rect fill="#0b0f16" height="320" rx="28" width="720" x="0" y="0"></rect>
+<circle cx="120" cy="160" fill="url(#g1)" r="92"></circle>
+<circle cx="120" cy="160" fill="none" opacity=".7" r="70" stroke="#f8fafc" stroke-width="3"></circle>
+<path d="M120 92 L136 140 L187 140 L146 170 L160 222 L120 192 L80 222 L94 170 L53 140 L104 140 Z" fill="#f8fafc" opacity=".94"></path>
+<text fill="#111827" font-family="Arial" font-size="22" font-weight="800" text-anchor="middle" x="120" y="168">PMMA</text>
+<text fill="#9ca3af" font-family="Arial" font-size="22" letter-spacing="3" x="250" y="125">SIMULADO COMPLETO</text>
+<text fill="#f8fafc" font-family="Arial" font-size="45" font-weight="900" x="250" y="170">120 ITENS</text>
+<text fill="#93c5fd" font-family="Arial" font-size="21" x="250" y="210">CERTO / ERRADO • CEBRASPE</text>
+<text fill="#d1d5db" font-family="Arial" font-size="18" x="250" y="250">Soldado do Quadro de Praças • PMMA 2026</text>
+</svg></div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="card pad">
+<h2 style="margin-top:0">Antes de começar</h2>
+<div class="notice"><strong>Regra de correção.</strong> Neste concurso, item certo vale +1, item errado vale −1 e item sem marcação (ou com dupla marcação) vale 0. Para o cargo 1, o edital exige mínimo de 10 pontos em P1, 21 em P2 e 36 no total para não ser eliminado. O cronômetro desta apostila é de 3h30, como a prova objetiva.</div>
+<p class="print-note">Observação importante: o edital fixa oficialmente apenas a divisão P1 = 50 itens e P2 = 70 itens. Ele não informa previamente quantos itens serão destinados a cada disciplina dentro desses blocos. Por isso, a distribuição interna desta apostila foi organizada pedagogicamente para cobrir <em>todas</em> as disciplinas do programa, sem apresentar essa divisão interna como “oficial”.</p>
+<div class="notice"><strong>Revisão de conteúdo — 30/09/2026.</strong> A estrutura foi conferida contra a retificação do edital: Raciocínio Lógico integra os conhecimentos gerais; para o Cargo 1, os conhecimentos específicos incluem Legislação Institucional (Leis nº 6.513/1995, nº 14.751/2023 e nº 12.896/2026) e Noções de Informática. Também foram revisadas as questões de legislação, inclusive a relação de subordinação da PMMA ao Governador e vinculação à SSP.</div>
+<div class="grid2">
+<div>
+<h3>P1 · Conhecimentos gerais</h3>
+<table class="table"><thead><tr><th>Disciplina</th><th>Itens no simulado</th></tr></thead><tbody>
+<tr><td>Língua Portuguesa</td><td>12</td></tr><tr><td>Raciocínio Lógico</td><td>8</td></tr><tr><td>História do Brasil</td><td>8</td></tr><tr><td>História do Maranhão</td><td>7</td></tr><tr><td>Geografia do Brasil</td><td>8</td></tr><tr><td>Geografia do Maranhão</td><td>7</td></tr><tr><th>Total</th><th>50</th></tr>
+</tbody></table>
+</div>
+<div>
+<h3>P2 · Conhecimentos específicos</h3>
+<table class="table"><thead><tr><th>Disciplina</th><th>Itens no simulado</th></tr></thead><tbody>
+<tr><td>Lei Estadual 6.513/1995</td><td>15</td></tr><tr><td>Lei Federal 14.751/2023</td><td>15</td></tr><tr><td>Lei Estadual 12.896/2026</td><td>15</td></tr><tr><td>Noções de Informática</td><td>25</td></tr><tr><th>Total</th><th>70</th></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</section>
+<div class="sticky-nav controls"><div class="navline container">
+<a href="#p1">P1</a><a href="#port">Português</a><a href="#rlm">RLM</a><a href="#histbr">Hist. Brasil</a><a href="#histma">Hist. MA</a><a href="#geobr">Geo. Brasil</a><a href="#geoma">Geo. MA</a><a href="#p2">P2</a><a href="#lei6513">6.513</a><a href="#lei14751">14.751</a><a href="#lei12896">12.896</a><a href="#info">Informática</a><a href="#folha">Folha</a><a href="#gabarito">Gabarito</a>
+</div></div>
+<section class="section exam-section" id="p1">
+<div class="card pad"><div class="exam-head"><div><h2>PROVA P1 · CONHECIMENTOS GERAIS</h2><div class="meta">50 itens · Certo/Errado</div></div><div class="tag">ITENS 01–50</div></div>
+<div class="stimulus" id="port"><h3>Texto I — itens 1 a 6</h3><p style="font-family:Georgia,serif;font-size:17px">A prevenção eficiente depende menos de ações isoladas do que da capacidade de conectar informações, pessoas e rotinas. Quando dados produzidos por diferentes setores são analisados em conjunto, padrões que antes pareciam dispersos podem revelar prioridades de atuação. Isso não elimina a necessidade de decisões humanas; ao contrário, exige que elas sejam justificadas por critérios verificáveis e revistas quando novas evidências surgirem.</p></div>
+<article class="q" data-answer="C" data-q="1" id="q1">
+<div class="q-top"><div class="qnum">01.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">O texto defende que a integração de informações pode auxiliar a identificar prioridades de atuação sem eliminar a necessidade de decisões humanas.</div>
+<div class="answers">
+<label class="answer"><input name="q1" onchange="saveAnswer(1,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q1" onchange="saveAnswer(1,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="C" data-q="2" id="q2">
+<div class="q-top"><div class="qnum">02.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">No trecho “padrões que antes pareciam dispersos podem revelar prioridades”, o pronome relativo “que” retoma “padrões”.</div>
+<div class="answers">
+<label class="answer"><input name="q2" onchange="saveAnswer(2,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q2" onchange="saveAnswer(2,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="C" data-q="3" id="q3">
+<div class="q-top"><div class="qnum">03.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">A substituição de “ao contrário” por “por outro lado” preservaria, no contexto, o sentido de oposição construído entre as orações.</div>
+<div class="answers">
+<label class="answer"><input name="q3" onchange="saveAnswer(3,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q3" onchange="saveAnswer(3,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="C" data-q="4" id="q4">
+<div class="q-top"><div class="qnum">04.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">Em “quando novas evidências surgirem”, a forma verbal “surgirem” está no futuro do subjuntivo.</div>
+<div class="answers">
+<label class="answer"><input name="q4" onchange="saveAnswer(4,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q4" onchange="saveAnswer(4,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="C" data-q="5" id="q5">
+<div class="q-top"><div class="qnum">05.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">Em “exige que elas sejam justificadas”, o pronome “elas” retoma exclusivamente “decisões humanas”.</div>
+<div class="answers">
+<label class="answer"><input name="q5" onchange="saveAnswer(5,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q5" onchange="saveAnswer(5,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="E" data-q="6" id="q6">
+<div class="q-top"><div class="qnum">06.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">A retirada da vírgula após “conjunto” no segundo período não produziria alteração sintática relevante.</div>
+<div class="answers">
+<label class="answer"><input name="q6" onchange="saveAnswer(6,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q6" onchange="saveAnswer(6,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A pontuação/vírgula integra a organização sintática do período; a retirada pode alterar a leitura e a estrutura, portanto não é correto afirmar que não produziria alteração relevante.</span></div>
+</article><div class="stimulus"><h3>Texto II — itens 7 a 12</h3><p style="font-family:Georgia,serif;font-size:17px">Em cidades de crescimento acelerado, deslocar-se tornou-se uma experiência marcada por contrastes. Em alguns bairros, a expansão de vias facilita o trânsito de automóveis, enquanto em outros a falta de transporte coletivo adequado amplia o tempo gasto pelos trabalhadores. Políticas de mobilidade, portanto, não dizem respeito apenas à circulação: afetam também o acesso a oportunidades e serviços.</p></div><article class="q" data-answer="E" data-q="7" id="q7">
+<div class="q-top"><div class="qnum">07.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">O segundo texto afirma que problemas de mobilidade urbana devem ser analisados apenas sob a perspectiva do fluxo de automóveis.</div>
+<div class="answers">
+<label class="answer"><input name="q7" onchange="saveAnswer(7,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q7" onchange="saveAnswer(7,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. O texto considera a mobilidade urbana de forma mais ampla, incluindo efeitos sobre acesso a oportunidades e serviços.</span></div>
+</article><article class="q" data-answer="E" data-q="8" id="q8">
+<div class="q-top"><div class="qnum">08.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">No trecho “Em alguns bairros, a expansão de vias facilita o trânsito de automóveis”, o termo “de automóveis” exerce função de complemento nominal.</div>
+<div class="answers">
+<label class="answer"><input name="q8" onchange="saveAnswer(8,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q8" onchange="saveAnswer(8,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Em “trânsito de automóveis”, “de automóveis” caracteriza o substantivo “trânsito” e não funciona como complemento nominal nesse contexto.</span></div>
+</article><article class="q" data-answer="C" data-q="9" id="q9">
+<div class="q-top"><div class="qnum">09.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">A palavra “portanto” estabelece relação de conclusão entre a situação descrita anteriormente e a afirmação subsequente.</div>
+<div class="answers">
+<label class="answer"><input name="q9" onchange="saveAnswer(9,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q9" onchange="saveAnswer(9,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="C" data-q="10" id="q10">
+<div class="q-top"><div class="qnum">10.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">A oração “que afetam também o acesso a oportunidades e serviços” restringe o sentido de “políticas de mobilidade”.</div>
+<div class="answers">
+<label class="answer"><input name="q10" onchange="saveAnswer(10,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q10" onchange="saveAnswer(10,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="C" data-q="11" id="q11">
+<div class="q-top"><div class="qnum">11.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">Seria gramaticalmente adequada a reescrita “Políticas de mobilidade, portanto, não dizem respeito somente à circulação”, sem alteração relevante de sentido.</div>
+<div class="answers">
+<label class="answer"><input name="q11" onchange="saveAnswer(11,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q11" onchange="saveAnswer(11,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Língua Portuguesa.</span></div>
+</article><article class="q" data-answer="E" data-q="12" id="q12">
+<div class="q-top"><div class="qnum">12.</div><div class="tag">Língua Portuguesa</div></div>
+<div class="qtext">Em “tornou-se uma experiência marcada por contrastes”, o emprego do pronome “se” caracteriza voz passiva sintética.</div>
+<div class="answers">
+<label class="answer"><input name="q12" onchange="saveAnswer(12,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q12" onchange="saveAnswer(12,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Em “tornou-se”, o “se” integra um verbo pronominal; não se trata de voz passiva sintética.</span></div>
+</article><div class="stimulus" id="rlm"><h3>Raciocínio lógico</h3><p>Julgue cada item de acordo com os princípios da lógica proposicional e da lógica de argumentação.</p><svg aria-label="Exemplo visual de tabela verdade" class="svg-art" role="img" viewbox="0 0 720 180">
+<rect fill="#f8fafc" height="180" rx="18" stroke="#d1d5db" width="720"></rect>
+<text fill="#111827" font-family="Arial" font-size="18" font-weight="700" x="40" y="35">Mini-esquema — proposição p ∧ q</text>
+<g fill="#111827" font-family="Arial" font-size="15"><text x="80" y="72">p</text><text x="170" y="72">q</text><text x="265" y="72">p ∧ q</text>
+<text x="80" y="102">V</text><text x="170" y="102">V</text><text x="265" y="102">V</text>
+<text x="80" y="130">V</text><text x="170" y="130">F</text><text x="265" y="130">F</text>
+<text x="80" y="158">F</text><text x="170" y="158">V</text><text x="265" y="158">F</text>
+<text font-size="18" font-weight="700" x="400" y="158">Conjunção: só é V quando ambos são V.</text></g>
+</svg></div><article class="q" data-answer="C" data-q="13" id="q13">
+<div class="q-top"><div class="qnum">13.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">A proposição “se p, então q” é logicamente equivalente a “não p ou q”.</div>
+<div class="answers">
+<label class="answer"><input name="q13" onchange="saveAnswer(13,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q13" onchange="saveAnswer(13,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Raciocínio Lógico.</span></div>
+</article><article class="q" data-answer="E" data-q="14" id="q14">
+<div class="q-top"><div class="qnum">14.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">A conjunção p ∧ q é verdadeira sempre que pelo menos uma das proposições simples p e q for verdadeira.</div>
+<div class="answers">
+<label class="answer"><input name="q14" onchange="saveAnswer(14,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q14" onchange="saveAnswer(14,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A conjunção p ∧ q só é verdadeira quando p e q são verdadeiras simultaneamente.</span></div>
+</article><article class="q" data-answer="C" data-q="15" id="q15">
+<div class="q-top"><div class="qnum">15.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">Pela lei de De Morgan, ¬(p ∧ q) é equivalente a (¬p ∨ ¬q).</div>
+<div class="answers">
+<label class="answer"><input name="q15" onchange="saveAnswer(15,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q15" onchange="saveAnswer(15,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Raciocínio Lógico.</span></div>
+</article><article class="q" data-answer="C" data-q="16" id="q16">
+<div class="q-top"><div class="qnum">16.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">Uma proposição composta formada por três proposições simples possui, em sua tabela-verdade, 8 linhas.</div>
+<div class="answers">
+<label class="answer"><input name="q16" onchange="saveAnswer(16,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q16" onchange="saveAnswer(16,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Raciocínio Lógico.</span></div>
+</article><article class="q" data-answer="C" data-q="17" id="q17">
+<div class="q-top"><div class="qnum">17.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">Do argumento “Se estudo, melhoro meu desempenho. Estudo. Logo, melhoro meu desempenho” pode-se concluir validamente a última proposição.</div>
+<div class="answers">
+<label class="answer"><input name="q17" onchange="saveAnswer(17,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q17" onchange="saveAnswer(17,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Raciocínio Lógico.</span></div>
+</article><article class="q" data-answer="E" data-q="18" id="q18">
+<div class="q-top"><div class="qnum">18.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">Do argumento “Se chove, a pista fica molhada. A pista está molhada. Logo, choveu” decorre uma inferência logicamente válida.</div>
+<div class="answers">
+<label class="answer"><input name="q18" onchange="saveAnswer(18,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q18" onchange="saveAnswer(18,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. O raciocínio parte de “p → q” e de q para concluir p, configurando afirmação do consequente, que não é inferência válida.</span></div>
+</article><article class="q" data-answer="C" data-q="19" id="q19">
+<div class="q-top"><div class="qnum">19.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">Se todo elemento de A pertence a B e nenhum elemento de B pertence a C, então nenhum elemento de A pertence a C.</div>
+<div class="answers">
+<label class="answer"><input name="q19" onchange="saveAnswer(19,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q19" onchange="saveAnswer(19,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Raciocínio Lógico.</span></div>
+</article><article class="q" data-answer="E" data-q="20" id="q20">
+<div class="q-top"><div class="qnum">20.</div><div class="tag">Raciocínio Lógico</div></div>
+<div class="qtext">A expressão “João estuda e Maria trabalha” é uma proposição simples, pois descreve um único fato composto.</div>
+<div class="answers">
+<label class="answer"><input name="q20" onchange="saveAnswer(20,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q20" onchange="saveAnswer(20,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. “João estuda e Maria trabalha” é uma proposição composta, formada por duas proposições simples ligadas por conjunção.</span></div>
+</article><div class="stimulus" id="histbr"><h3>História do Brasil</h3><p>Os itens cobrem os processos políticos, econômicos e sociais previstos no programa. A linha do tempo abaixo é apenas um apoio visual de leitura, não substitui o estudo.</p><svg aria-label="Linha do tempo da história política do Brasil" class="svg-art" role="img" viewbox="0 0 720 150">
+<rect fill="#0f172a" height="150" rx="18" width="720"></rect>
+<line stroke="#93c5fd" stroke-width="5" x1="55" x2="665" y1="78" y2="78"></line>
+<g fill="#f8fafc" font-family="Arial" text-anchor="middle"><circle cx="100" cy="78" fill="#2563eb" r="10"></circle><text font-weight="700" x="100" y="55">1930</text><text font-size="13" x="100" y="112">Vargas</text>
+<circle cx="245" cy="78" fill="#10b981" r="10"></circle><text font-weight="700" x="245" y="55">1937</text><text font-size="13" x="245" y="112">Estado Novo</text>
+<circle cx="395" cy="78" fill="#f59e0b" r="10"></circle><text font-weight="700" x="395" y="55">1946</text><text font-size="13" x="395" y="112">Constituição</text>
+<circle cx="545" cy="78" fill="#ef4444" r="10"></circle><text font-weight="700" x="545" y="55">1964</text><text font-size="13" x="545" y="112">Regime militar</text>
+<circle cx="650" cy="78" fill="#8b5cf6" r="10"></circle><text font-weight="700" x="650" y="55">1988</text><text font-size="13" x="650" y="112">Constituição</text></g>
+</svg></div><article class="q" data-answer="C" data-q="21" id="q21">
+<div class="q-top"><div class="qnum">21.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">A formação social brasileira contou com contribuições indígenas e africanas que ultrapassam a dimensão econômica e alcançam língua, alimentação, técnicas, religiosidade, costumes e formas de organização social.</div>
+<div class="answers">
+<label class="answer"><input name="q21" onchange="saveAnswer(21,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q21" onchange="saveAnswer(21,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="22" id="q22">
+<div class="q-top"><div class="qnum">22.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">Na República Velha, as estruturas oligárquicas estiveram associadas ao predomínio político de elites regionais e à influência do poder dos grandes proprietários rurais.</div>
+<div class="answers">
+<label class="answer"><input name="q22" onchange="saveAnswer(22,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q22" onchange="saveAnswer(22,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="23" id="q23">
+<div class="q-top"><div class="qnum">23.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">A expansão cafeeira do final do século XIX e início do XX esteve relacionada à acumulação de capitais, ao crescimento de infraestrutura e à transformação das relações de trabalho.</div>
+<div class="answers">
+<label class="answer"><input name="q23" onchange="saveAnswer(23,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q23" onchange="saveAnswer(23,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="24" id="q24">
+<div class="q-top"><div class="qnum">24.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">A Revolução de 1930 conduziu Getúlio Vargas ao poder e encerrou a Primeira República, iniciando uma fase de reorganização institucional.</div>
+<div class="answers">
+<label class="answer"><input name="q24" onchange="saveAnswer(24,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q24" onchange="saveAnswer(24,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="25" id="q25">
+<div class="q-top"><div class="qnum">25.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">O Estado Novo, instaurado em 1937, caracterizou-se por forte centralização política e restrição das liberdades políticas.</div>
+<div class="answers">
+<label class="answer"><input name="q25" onchange="saveAnswer(25,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q25" onchange="saveAnswer(25,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="26" id="q26">
+<div class="q-top"><div class="qnum">26.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">A Constituição de 1946 foi promulgada em contexto de redemocratização e restabeleceu instituições democráticas após o Estado Novo.</div>
+<div class="answers">
+<label class="answer"><input name="q26" onchange="saveAnswer(26,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q26" onchange="saveAnswer(26,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><article class="q" data-answer="E" data-q="27" id="q27">
+<div class="q-top"><div class="qnum">27.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">O governo de Juscelino Kubitschek abandonou deliberadamente a industrialização e concentrou investimentos apenas no setor agrícola.</div>
+<div class="answers">
+<label class="answer"><input name="q27" onchange="saveAnswer(27,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q27" onchange="saveAnswer(27,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. O governo JK adotou política desenvolvimentista e impulsionou a industrialização, especialmente por meio do Plano de Metas.</span></div>
+</article><article class="q" data-answer="C" data-q="28" id="q28">
+<div class="q-top"><div class="qnum">28.</div><div class="tag">História do Brasil</div></div>
+<div class="qtext">O golpe de 1964 deu início ao regime militar brasileiro, cujo encerramento ocorreu em um processo de abertura e redemocratização que culminou na ordem constitucional de 1988.</div>
+<div class="answers">
+<label class="answer"><input name="q28" onchange="saveAnswer(28,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q28" onchange="saveAnswer(28,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Brasil.</span></div>
+</article><div class="stimulus" id="histma"><h3>História do Maranhão</h3><p>Julgue as afirmações sobre a formação histórica e os principais acontecimentos do Maranhão.</p></div><article class="q" data-answer="C" data-q="29" id="q29">
+<div class="q-top"><div class="qnum">29.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A França Equinocial esteve relacionada à expedição de Daniel de La Touche, senhor de La Ravardière, e à tentativa francesa de estabelecer presença colonial na região do Maranhão.</div>
+<div class="answers">
+<label class="answer"><input name="q29" onchange="saveAnswer(29,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q29" onchange="saveAnswer(29,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="30" id="q30">
+<div class="q-top"><div class="qnum">30.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A fundação de São Luís está ligada ao contexto da ocupação francesa do Maranhão, em 1612.</div>
+<div class="answers">
+<label class="answer"><input name="q30" onchange="saveAnswer(30,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q30" onchange="saveAnswer(30,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="31" id="q31">
+<div class="q-top"><div class="qnum">31.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A Batalha de Guaxenduba esteve ligada ao processo de disputa entre franceses e luso-brasileiros pelo controle da área do Maranhão.</div>
+<div class="answers">
+<label class="answer"><input name="q31" onchange="saveAnswer(31,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q31" onchange="saveAnswer(31,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="32" id="q32">
+<div class="q-top"><div class="qnum">32.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A invasão holandesa no Maranhão ocorreu no século XVII, inserindo o território maranhense nas disputas coloniais envolvendo os holandeses.</div>
+<div class="answers">
+<label class="answer"><input name="q32" onchange="saveAnswer(32,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q32" onchange="saveAnswer(32,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="33" id="q33">
+<div class="q-top"><div class="qnum">33.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A Revolta de Bequimão esteve relacionada a conflitos locais envolvendo comerciantes, autoridades e os efeitos da Companhia de Comércio do Maranhão e Grão-Pará.</div>
+<div class="answers">
+<label class="answer"><input name="q33" onchange="saveAnswer(33,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q33" onchange="saveAnswer(33,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="34" id="q34">
+<div class="q-top"><div class="qnum">34.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A Balaiada foi um movimento ocorrido no Maranhão e em áreas adjacentes durante a década de 1830, associado a tensões sociais, econômicas e políticas do período regencial.</div>
+<div class="answers">
+<label class="answer"><input name="q34" onchange="saveAnswer(34,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q34" onchange="saveAnswer(34,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="35" id="q35">
+<div class="q-top"><div class="qnum">35.</div><div class="tag">História do Maranhão</div></div>
+<div class="qtext">A Revolução de 1930 repercutiu no Maranhão e se insere no contexto nacional de ruptura da ordem política da Primeira República.</div>
+<div class="answers">
+<label class="answer"><input name="q35" onchange="saveAnswer(35,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q35" onchange="saveAnswer(35,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em História do Maranhão.</span></div>
+</article><div class="stimulus" id="geobr"><h3>Geografia do Brasil</h3><p>Observe o esquema de integração territorial abaixo e julgue os itens.</p><svg aria-label="Esquema de integração territorial" class="svg-art" role="img" viewbox="0 0 720 210">
+<rect fill="#eff6ff" height="210" rx="18" stroke="#bfdbfe" width="720"></rect>
+<g font-family="Arial" text-anchor="middle"><rect fill="#dbeafe" height="64" rx="16" width="150" x="48" y="70"></rect><text fill="#1e3a8a" font-weight="700" x="123" y="97">Produção</text><text fill="#1e3a8a" x="123" y="118">agro / indústria</text>
+<rect fill="#dcfce7" height="64" rx="16" width="150" x="285" y="70"></rect><text fill="#166534" font-weight="700" x="360" y="97">Transportes</text><text fill="#166534" x="360" y="118">rodovias / portos</text>
+<rect fill="#fef3c7" height="64" rx="16" width="150" x="522" y="70"></rect><text fill="#92400e" font-weight="700" x="597" y="97">Mercados</text><text fill="#92400e" x="597" y="118">consumo / exportação</text>
+<path d="M198 102 H282" marker-end="url(#arr)" stroke="#334155" stroke-width="5"></path><path d="M435 102 H519" marker-end="url(#arr)" stroke="#334155" stroke-width="5"></path></g>
+<defs><marker id="arr" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="4"><path d="M0,0 L8,4 L0,8 z" fill="#334155"></path></marker></defs>
+</svg></div><article class="q" data-answer="C" data-q="36" id="q36">
+<div class="q-top"><div class="qnum">36.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">A integração do Brasil à economia internacional intensificou fluxos de mercadorias, capitais, informações e tecnologias, com efeitos diferenciados sobre o território.</div>
+<div class="answers">
+<label class="answer"><input name="q36" onchange="saveAnswer(36,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q36" onchange="saveAnswer(36,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Brasil.</span></div>
+</article><article class="q" data-answer="E" data-q="37" id="q37">
+<div class="q-top"><div class="qnum">37.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">A industrialização brasileira ocorreu de forma espacialmente uniforme, sem concentração histórica de atividades industriais no Sudeste.</div>
+<div class="answers">
+<label class="answer"><input name="q37" onchange="saveAnswer(37,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q37" onchange="saveAnswer(37,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A industrialização brasileira apresentou forte concentração histórica no Sudeste, embora tenha ocorrido posterior desconcentração relativa.</span></div>
+</article><article class="q" data-answer="C" data-q="38" id="q38">
+<div class="q-top"><div class="qnum">38.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">A rede de transportes interfere na organização do espaço ao conectar áreas produtoras, centros consumidores e corredores de exportação.</div>
+<div class="answers">
+<label class="answer"><input name="q38" onchange="saveAnswer(38,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q38" onchange="saveAnswer(38,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="39" id="q39">
+<div class="q-top"><div class="qnum">39.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">O crescimento das grandes metrópoles brasileiras está relacionado a processos de urbanização, concentração de serviços e integração de municípios em áreas metropolitanas.</div>
+<div class="answers">
+<label class="answer"><input name="q39" onchange="saveAnswer(39,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q39" onchange="saveAnswer(39,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Brasil.</span></div>
+</article><article class="q" data-answer="E" data-q="40" id="q40">
+<div class="q-top"><div class="qnum">40.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">A expansão das fronteiras agrícolas para o Centro-Oeste e a Amazônia ocorreu sem impactos ambientais relevantes e sem transformação de paisagens.</div>
+<div class="answers">
+<label class="answer"><input name="q40" onchange="saveAnswer(40,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q40" onchange="saveAnswer(40,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A expansão das fronteiras agrícolas produziu transformações ambientais e territoriais relevantes, inclusive desmatamento e alteração de paisagens.</span></div>
+</article><article class="q" data-answer="C" data-q="41" id="q41">
+<div class="q-top"><div class="qnum">41.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">Os movimentos migratórios internos brasileiros estiveram associados, em diferentes momentos, a oportunidades de trabalho, expansão agrícola, urbanização e desigualdades regionais.</div>
+<div class="answers">
+<label class="answer"><input name="q41" onchange="saveAnswer(41,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q41" onchange="saveAnswer(41,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Brasil.</span></div>
+</article><article class="q" data-answer="C" data-q="42" id="q42">
+<div class="q-top"><div class="qnum">42.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">A estrutura etária de uma população pode ser analisada por meio da distribuição de seus habitantes por faixas de idade.</div>
+<div class="answers">
+<label class="answer"><input name="q42" onchange="saveAnswer(42,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q42" onchange="saveAnswer(42,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Brasil.</span></div>
+</article><article class="q" data-answer="E" data-q="43" id="q43">
+<div class="q-top"><div class="qnum">43.</div><div class="tag">Geografia do Brasil</div></div>
+<div class="qtext">A conservação dos recursos naturais implica apenas aumentar a exploração econômica de recursos, desde que essa exploração gere renda.</div>
+<div class="answers">
+<label class="answer"><input name="q43" onchange="saveAnswer(43,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q43" onchange="saveAnswer(43,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Conservação envolve uso racional e proteção dos recursos naturais, e não simplesmente ampliar sua exploração econômica.</span></div>
+</article><div class="stimulus" id="geoma"><h3>Geografia do Maranhão</h3><p>Esquema territorial simplificado, apenas para visualização dos eixos temáticos.</p><svg aria-label="Esquema de temas de Geografia do Maranhão" class="svg-art" role="img" viewbox="0 0 720 220">
+<rect fill="#f8fafc" height="220" rx="18" stroke="#cbd5e1" width="720"></rect>
+<text fill="#0f172a" font-family="Arial" font-size="18" font-weight="800" x="40" y="35">Maranhão — leitura territorial esquemática</text>
+<g font-family="Arial" text-anchor="middle"><rect fill="#dcfce7" height="95" rx="20" width="175" x="60" y="70"></rect><text fill="#166534" font-weight="700" x="147" y="100">Vegetação</text><text fill="#166534" x="147" y="123">floresta</text><text fill="#166534" x="147" y="145">cerrado • cocais</text>
+<rect fill="#dbeafe" height="95" rx="20" width="175" x="272" y="70"></rect><text fill="#1e3a8a" font-weight="700" x="359" y="100">Hidrografia</text><text fill="#1e3a8a" x="359" y="123">Parnaíba</text><text fill="#1e3a8a" x="359" y="145">Gurupi • Tocantins-Araguaia</text>
+<rect fill="#ffedd5" height="95" rx="20" width="175" x="484" y="70"></rect><text fill="#9a3412" font-weight="700" x="571" y="100">Economia</text><text fill="#9a3412" x="571" y="123">agricultura</text><text fill="#9a3412" x="571" y="145">indústria • serviços</text></g>
+</svg></div><article class="q" data-answer="C" data-q="44" id="q44">
+<div class="q-top"><div class="qnum">44.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">O Maranhão possui limites territoriais com estados das regiões Nordeste e Norte do Brasil, situando-se em área de transição entre diferentes domínios naturais.</div>
+<div class="answers">
+<label class="answer"><input name="q44" onchange="saveAnswer(44,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q44" onchange="saveAnswer(44,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="45" id="q45">
+<div class="q-top"><div class="qnum">45.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">As formações vegetais associadas ao Maranhão incluem áreas de floresta, cerrado e cocais, refletindo a posição de transição do estado.</div>
+<div class="answers">
+<label class="answer"><input name="q45" onchange="saveAnswer(45,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q45" onchange="saveAnswer(45,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="46" id="q46">
+<div class="q-top"><div class="qnum">46.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">Os rios Parnaíba, Gurupi e Tocantins-Araguaia são mencionados no programa como bacias de rios limítrofes do Maranhão.</div>
+<div class="answers">
+<label class="answer"><input name="q46" onchange="saveAnswer(46,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q46" onchange="saveAnswer(46,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Maranhão.</span></div>
+</article><article class="q" data-answer="E" data-q="47" id="q47">
+<div class="q-top"><div class="qnum">47.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">A malha viária maranhense possui importância apenas local e não se relaciona à circulação de mercadorias entre regiões produtoras e centros consumidores.</div>
+<div class="answers">
+<label class="answer"><input name="q47" onchange="saveAnswer(47,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q47" onchange="saveAnswer(47,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A malha viária participa da circulação regional de pessoas e mercadorias e da integração entre áreas produtoras e mercados.</span></div>
+</article><article class="q" data-answer="C" data-q="48" id="q48">
+<div class="q-top"><div class="qnum">48.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">O setor terciário compreende atividades como comércio, telecomunicações e transportes.</div>
+<div class="answers">
+<label class="answer"><input name="q48" onchange="saveAnswer(48,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q48" onchange="saveAnswer(48,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Maranhão.</span></div>
+</article><article class="q" data-answer="C" data-q="49" id="q49">
+<div class="q-top"><div class="qnum">49.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">A agricultura maranhense pode ser analisada conjuntamente com a dinâmica fundiária, os mercados consumidores e as redes de transporte.</div>
+<div class="answers">
+<label class="answer"><input name="q49" onchange="saveAnswer(49,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q49" onchange="saveAnswer(49,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Geografia do Maranhão.</span></div>
+</article><article class="q" data-answer="E" data-q="50" id="q50">
+<div class="q-top"><div class="qnum">50.</div><div class="tag">Geografia do Maranhão</div></div>
+<div class="qtext">A cultura maranhense não integra o conteúdo programático de Geografia do Maranhão indicado para o concurso.</div>
+<div class="answers">
+<label class="answer"><input name="q50" onchange="saveAnswer(50,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q50" onchange="saveAnswer(50,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. “Cultura maranhense” consta expressamente entre os conteúdos de Geografia do Maranhão.</span></div>
+</article></div></section><section class="section exam-section" id="p2"><div class="card pad"><div class="exam-head"><div><h2>PROVA P2 · CONHECIMENTOS ESPECÍFICOS</h2><div class="meta">70 itens · Certo/Errado</div></div><div class="tag">ITENS 51–120</div></div><div class="stimulus" id="lei6513"><h3>Legislação Institucional · Lei Estadual nº 6.513/1995</h3><p>Julgue os itens considerando o Estatuto dos Policiais-Militares do Estado do Maranhão e suas alterações.</p></div><article class="q" data-answer="C" data-q="51" id="q51">
+<div class="q-top"><div class="qnum">51.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Segundo o Estatuto dos Policiais-Militares do Maranhão, os integrantes da Polícia Militar constituem a categoria de Servidores Públicos Militares do Estado.</div>
+<div class="answers">
+<label class="answer"><input name="q51" onchange="saveAnswer(51,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q51" onchange="saveAnswer(51,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="52" id="q52">
+<div class="q-top"><div class="qnum">52.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">A hierarquia e a disciplina são bases institucionais da Polícia Militar, e a autoridade e a responsabilidade crescem com o grau hierárquico.</div>
+<div class="answers">
+<label class="answer"><input name="q52" onchange="saveAnswer(52,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q52" onchange="saveAnswer(52,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="53" id="q53">
+<div class="q-top"><div class="qnum">53.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">A hierarquia militar consiste na ordenação da autoridade em níveis diferentes, observada a subordinação entre postos e graduações.</div>
+<div class="answers">
+<label class="answer"><input name="q53" onchange="saveAnswer(53,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q53" onchange="saveAnswer(53,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="E" data-q="54" id="q54">
+<div class="q-top"><div class="qnum">54.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Segundo o Estatuto, disciplina é a ordenação da autoridade em níveis diferentes, enquanto hierarquia é o rigoroso acatamento às leis e regulamentos.</div>
+<div class="answers">
+<label class="answer"><input name="q54" onchange="saveAnswer(54,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q54" onchange="saveAnswer(54,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Os conceitos foram invertidos: hierarquia trata da ordenação da autoridade; disciplina corresponde ao rigoroso acatamento às leis, regulamentos e normas.</span></div>
+</article><article class="q" data-answer="C" data-q="55" id="q55">
+<div class="q-top"><div class="qnum">55.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">O posto é o grau hierárquico do oficial, enquanto a graduação é o grau hierárquico da praça.</div>
+<div class="answers">
+<label class="answer"><input name="q55" onchange="saveAnswer(55,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q55" onchange="saveAnswer(55,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="E" data-q="56" id="q56">
+<div class="q-top"><div class="qnum">56.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">A disciplina e o respeito à hierarquia devem ser mantidos somente entre militares da ativa.</div>
+<div class="answers">
+<label class="answer"><input name="q56" onchange="saveAnswer(56,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q56" onchange="saveAnswer(56,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A disciplina e o respeito à hierarquia não se restringem aos militares da ativa; o Estatuto disciplina a precedência e a situação dos militares em diferentes condições.</span></div>
+</article><article class="q" data-answer="C" data-q="57" id="q57">
+<div class="q-top"><div class="qnum">57.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Os círculos hierárquicos têm finalidade de desenvolver o espírito de camaradagem em ambiente de estima e confiança, sem prejuízo do respeito mútuo.</div>
+<div class="answers">
+<label class="answer"><input name="q57" onchange="saveAnswer(57,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q57" onchange="saveAnswer(57,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="58" id="q58">
+<div class="q-top"><div class="qnum">58.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">A precedência hierárquica é regulada pelo posto ou graduação e pela antiguidade, salvo quando houver precedência funcional estabelecida em lei.</div>
+<div class="answers">
+<label class="answer"><input name="q58" onchange="saveAnswer(58,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q58" onchange="saveAnswer(58,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="59" id="q59">
+<div class="q-top"><div class="qnum">59.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">A antiguidade no posto ou graduação é regulada, entre outros critérios, pela data de promoção, pela precedência dos graus anteriores, pela data de ingresso e pela data de nascimento.</div>
+<div class="answers">
+<label class="answer"><input name="q59" onchange="saveAnswer(59,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q59" onchange="saveAnswer(59,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="E" data-q="60" id="q60">
+<div class="q-top"><div class="qnum">60.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Em igualdade de posto ou graduação, os militares da inatividade têm precedência sobre os militares da ativa.</div>
+<div class="answers">
+<label class="answer"><input name="q60" onchange="saveAnswer(60,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q60" onchange="saveAnswer(60,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A precedência não decorre simplesmente da inatividade; ela segue as regras estatutárias de posto, graduação, antiguidade e precedência funcional.</span></div>
+</article><article class="q" data-answer="C" data-q="61" id="q61">
+<div class="q-top"><div class="qnum">61.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Os candidatos selecionados em concurso para o cargo de formação de Soldado ingressam na Polícia Militar como aluno, por período correspondente à duração do curso.</div>
+<div class="answers">
+<label class="answer"><input name="q61" onchange="saveAnswer(61,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q61" onchange="saveAnswer(61,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="62" id="q62">
+<div class="q-top"><div class="qnum">62.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Na classificação hierárquica, o Capitão integra o círculo de oficiais intermediários.</div>
+<div class="answers">
+<label class="answer"><input name="q62" onchange="saveAnswer(62,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q62" onchange="saveAnswer(62,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="63" id="q63">
+<div class="q-top"><div class="qnum">63.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">Aspirante-a-Oficial e Cadetes integram as praças especiais.</div>
+<div class="answers">
+<label class="answer"><input name="q63" onchange="saveAnswer(63,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q63" onchange="saveAnswer(63,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="64" id="q64">
+<div class="q-top"><div class="qnum">64.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">O Primeiro-Tenente e o Segundo-Tenente integram o círculo de oficiais subalternos.</div>
+<div class="answers">
+<label class="answer"><input name="q64" onchange="saveAnswer(64,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q64" onchange="saveAnswer(64,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><article class="q" data-answer="C" data-q="65" id="q65">
+<div class="q-top"><div class="qnum">65.</div><div class="tag">Lei Estadual 6.513/1995</div></div>
+<div class="qtext">A ordem de classificação obtida no curso ou concurso pode ser utilizada para definir antiguidade em hipóteses previstas pelo Estatuto.</div>
+<div class="answers">
+<label class="answer"><input name="q65" onchange="saveAnswer(65,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q65" onchange="saveAnswer(65,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 6.513/1995.</span></div>
+</article><div class="stimulus" id="lei14751"><h3>Legislação Institucional · Lei Federal nº 14.751/2023</h3><p>Lei Orgânica Nacional das Polícias Militares e dos Corpos de Bombeiros Militares.</p></div><article class="q" data-answer="C" data-q="66" id="q66">
+<div class="q-top"><div class="qnum">66.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A Lei nº 14.751/2023 institui a Lei Orgânica Nacional das Polícias Militares e dos Corpos de Bombeiros Militares dos Estados, do Distrito Federal e dos Territórios.</div>
+<div class="answers">
+<label class="answer"><input name="q66" onchange="saveAnswer(66,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q66" onchange="saveAnswer(66,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="C" data-q="67" id="q67">
+<div class="q-top"><div class="qnum">67.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">Entre os princípios básicos previstos na Lei nº 14.751/2023 estão hierarquia, disciplina, legalidade, publicidade, moralidade, eficiência, efetividade e participação comunitária.</div>
+<div class="answers">
+<label class="answer"><input name="q67" onchange="saveAnswer(67,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q67" onchange="saveAnswer(67,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="E" data-q="68" id="q68">
+<div class="q-top"><div class="qnum">68.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A Lei Orgânica Nacional exclui direitos humanos e participação comunitária dos princípios básicos das polícias militares e corpos de bombeiros militares.</div>
+<div class="answers">
+<label class="answer"><input name="q68" onchange="saveAnswer(68,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q68" onchange="saveAnswer(68,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Direitos humanos e participação/interação comunitária aparecem expressamente entre os princípios básicos da Lei nº 14.751/2023.</span></div>
+</article><article class="q" data-answer="C" data-q="69" id="q69">
+<div class="q-top"><div class="qnum">69.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">As polícias militares e os corpos de bombeiros militares integram, nos termos da lei, o SUSP, a Defesa Nacional, o Sinpdec e o Sisnama.</div>
+<div class="answers">
+<label class="answer"><input name="q69" onchange="saveAnswer(69,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q69" onchange="saveAnswer(69,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="E" data-q="70" id="q70">
+<div class="q-top"><div class="qnum">70.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A Lei nº 14.751/2023 determina que a distribuição do efetivo seja feita sem considerar o número de habitantes da circunscrição.</div>
+<div class="answers">
+<label class="answer"><input name="q70" onchange="saveAnswer(70,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q70" onchange="saveAnswer(70,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A lei prevê critérios para distribuição do efetivo, incluindo referência ao número de habitantes da circunscrição, conforme as regras legais.</span></div>
+</article><article class="q" data-answer="C" data-q="71" id="q71">
+<div class="q-top"><div class="qnum">71.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">O atendimento permanente ao cidadão e à sociedade integra as diretrizes previstas na Lei Orgânica Nacional.</div>
+<div class="answers">
+<label class="answer"><input name="q71" onchange="saveAnswer(71,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q71" onchange="saveAnswer(71,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="E" data-q="72" id="q72">
+<div class="q-top"><div class="qnum">72.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A lei estabelece que a apresentação do plano de comando pelo comandante-geral ocorre, como regra, em até 90 dias após a posse.</div>
+<div class="answers">
+<label class="answer"><input name="q72" onchange="saveAnswer(72,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q72" onchange="saveAnswer(72,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. O art. 29, § 2º, da Lei nº 14.751/2023 fixa prazo de até 60 dias da posse, e não 90 dias, para apresentação do plano de comando.</span></div>
+</article><article class="q" data-answer="C" data-q="73" id="q73">
+<div class="q-top"><div class="qnum">73.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A data comemorativa nacional das polícias militares é 21 de abril.</div>
+<div class="answers">
+<label class="answer"><input name="q73" onchange="saveAnswer(73,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q73" onchange="saveAnswer(73,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="E" data-q="74" id="q74">
+<div class="q-top"><div class="qnum">74.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A data comemorativa nacional das polícias militares é 2 de julho, data tradicionalmente associada aos corpos de bombeiros militares.</div>
+<div class="answers">
+<label class="answer"><input name="q74" onchange="saveAnswer(74,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q74" onchange="saveAnswer(74,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A Lei nº 14.751/2023 fixa 21 de abril como data comemorativa nacional das polícias militares; 2 de julho é a data dos corpos de bombeiros militares.</span></div>
+</article><article class="q" data-answer="C" data-q="75" id="q75">
+<div class="q-top"><div class="qnum">75.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A lei prevê que as polícias militares e corpos de bombeiros militares são instituições militares permanentes e indispensáveis à preservação da ordem pública.</div>
+<div class="answers">
+<label class="answer"><input name="q75" onchange="saveAnswer(75,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q75" onchange="saveAnswer(75,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="C" data-q="76" id="q76">
+<div class="q-top"><div class="qnum">76.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">As instituições abrangidas pela Lei nº 14.751/2023 são organizadas com base na hierarquia e na disciplina militares.</div>
+<div class="answers">
+<label class="answer"><input name="q76" onchange="saveAnswer(76,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q76" onchange="saveAnswer(76,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="E" data-q="77" id="q77">
+<div class="q-top"><div class="qnum">77.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">Razoabilidade e proporcionalidade não aparecem entre os princípios básicos previstos pela Lei nº 14.751/2023.</div>
+<div class="answers">
+<label class="answer"><input name="q77" onchange="saveAnswer(77,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q77" onchange="saveAnswer(77,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Razoabilidade e proporcionalidade constam expressamente entre os princípios básicos da Lei nº 14.751/2023.</span></div>
+</article><article class="q" data-answer="C" data-q="78" id="q78">
+<div class="q-top"><div class="qnum">78.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">Publicidade, transparência e prestação de contas aparecem associadas como princípio básico na Lei Orgânica Nacional.</div>
+<div class="answers">
+<label class="answer"><input name="q78" onchange="saveAnswer(78,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q78" onchange="saveAnswer(78,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="C" data-q="79" id="q79">
+<div class="q-top"><div class="qnum">79.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A integração com a comunidade e com o Poder Judiciário é prevista como diretriz das instituições militares estaduais.</div>
+<div class="answers">
+<label class="answer"><input name="q79" onchange="saveAnswer(79,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q79" onchange="saveAnswer(79,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Federal 14.751/2023.</span></div>
+</article><article class="q" data-answer="E" data-q="80" id="q80">
+<div class="q-top"><div class="qnum">80.</div><div class="tag">Lei Federal 14.751/2023</div></div>
+<div class="qtext">A participação e interação comunitária foram incluídas apenas como meta administrativa, e não como princípio básico.</div>
+<div class="answers">
+<label class="answer"><input name="q80" onchange="saveAnswer(80,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q80" onchange="saveAnswer(80,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Participação e interação comunitária aparecem como princípio básico, e não apenas como meta administrativa.</span></div>
+</article><div class="stimulus" id="lei12896"><h3>Legislação Institucional · Lei Estadual nº 12.896/2026</h3><p>Lei de Organização Básica da PMMA.</p></div><article class="q" data-answer="C" data-q="81" id="q81">
+<div class="q-top"><div class="qnum">81.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A Lei nº 12.896/2026 define a PMMA como instituição militar permanente, exclusiva e típica de Estado, considerada força auxiliar e reserva do Exército e integrante do SUSP.</div>
+<div class="answers">
+<label class="answer"><input name="q81" onchange="saveAnswer(81,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q81" onchange="saveAnswer(81,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="82" id="q82">
+<div class="q-top"><div class="qnum">82.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A PMMA subordina-se hierarquicamente ao Governador do Estado e vincula-se à Secretaria de Estado da Segurança Pública.</div>
+<div class="answers">
+<label class="answer"><input name="q82" onchange="saveAnswer(82,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q82" onchange="saveAnswer(82,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Certo. O art. 3º da Lei nº 12.896/2026 estabelece subordinação hierárquica ao Governador do Estado e vinculação à Secretaria de Estado da Segurança Pública.</span></div>
+</article><article class="q" data-answer="C" data-q="83" id="q83">
+<div class="q-top"><div class="qnum">83.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">Compete à PMMA executar, com exclusividade e ressalvadas as missões peculiares das Forças Armadas, o policiamento ostensivo, fardado, planejado pela autoridade competente.</div>
+<div class="answers">
+<label class="answer"><input name="q83" onchange="saveAnswer(83,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q83" onchange="saveAnswer(83,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="84" id="q84">
+<div class="q-top"><div class="qnum">84.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A PMMA exerce privativamente a polícia judiciária militar do Estado, nos termos de suas atribuições constitucionais e legais.</div>
+<div class="answers">
+<label class="answer"><input name="q84" onchange="saveAnswer(84,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q84" onchange="saveAnswer(84,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="85" id="q85">
+<div class="q-top"><div class="qnum">85.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">O exercício das competências de agente da autoridade de trânsito pode ocorrer por delegação ou convênio, ressalvadas as competências da União e dos Municípios.</div>
+<div class="answers">
+<label class="answer"><input name="q85" onchange="saveAnswer(85,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q85" onchange="saveAnswer(85,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="86" id="q86">
+<div class="q-top"><div class="qnum">86.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A lei atribui à PMMA ações de inteligência e contrainteligência destinadas à execução e ao acompanhamento de assuntos de segurança pública, polícia judiciária militar e preservação da ordem pública.</div>
+<div class="answers">
+<label class="answer"><input name="q86" onchange="saveAnswer(86,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q86" onchange="saveAnswer(86,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="E" data-q="87" id="q87">
+<div class="q-top"><div class="qnum">87.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A organização da PMMA prevista na Lei nº 12.896/2026 não admite estrutura diferenciada por grupos de órgãos.</div>
+<div class="answers">
+<label class="answer"><input name="q87" onchange="saveAnswer(87,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q87" onchange="saveAnswer(87,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A lei organiza a PMMA em grupos de órgãos e prevê estrutura organizacional diferenciada.</span></div>
+</article><article class="q" data-answer="C" data-q="88" id="q88">
+<div class="q-top"><div class="qnum">88.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">O Estado-Maior Geral exerce direção estratégica, planejamento, coordenação e controle das atividades operacionais e administrativas, conforme sua competência legal.</div>
+<div class="answers">
+<label class="answer"><input name="q88" onchange="saveAnswer(88,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q88" onchange="saveAnswer(88,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="E" data-q="89" id="q89">
+<div class="q-top"><div class="qnum">89.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">O Estado-Maior Geral limita-se ao planejamento operacional, sem atuar em coordenação ou controle das atividades administrativas.</div>
+<div class="answers">
+<label class="answer"><input name="q89" onchange="saveAnswer(89,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q89" onchange="saveAnswer(89,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. O Estado-Maior Geral exerce direção estratégica, planejamento, coordenação e controle das atividades operacionais e administrativas.</span></div>
+</article><article class="q" data-answer="C" data-q="90" id="q90">
+<div class="q-top"><div class="qnum">90.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A 2ª Seção do Estado-Maior Geral (PM/2) está relacionada às atividades de inteligência estratégica e contrainteligência.</div>
+<div class="answers">
+<label class="answer"><input name="q90" onchange="saveAnswer(90,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q90" onchange="saveAnswer(90,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="E" data-q="91" id="q91">
+<div class="q-top"><div class="qnum">91.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A Corregedoria-Geral exerce apenas corregedoria administrativa, não abrangendo a preservação da ética e disciplina nem funções de polícia judiciária militar.</div>
+<div class="answers">
+<label class="answer"><input name="q91" onchange="saveAnswer(91,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q91" onchange="saveAnswer(91,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. A Corregedoria-Geral abrange, entre outras atribuições, a preservação da ética e disciplina e o exercício da polícia judiciária militar.</span></div>
+</article><article class="q" data-answer="C" data-q="92" id="q92">
+<div class="q-top"><div class="qnum">92.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">Entre as funções da Corregedoria-Geral estão a preservação da ética e disciplina e o exercício de polícia judiciária militar.</div>
+<div class="answers">
+<label class="answer"><input name="q92" onchange="saveAnswer(92,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q92" onchange="saveAnswer(92,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="93" id="q93">
+<div class="q-top"><div class="qnum">93.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">O efetivo global da Polícia Militar do Maranhão passa a ser de 14.290 policiais militares, distribuídos pelos postos e graduações previstos na lei.</div>
+<div class="answers">
+<label class="answer"><input name="q93" onchange="saveAnswer(93,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q93" onchange="saveAnswer(93,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="94" id="q94">
+<div class="q-top"><div class="qnum">94.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">A lei de organização básica apresenta uma estrutura hierárquica de postos e graduações para ordenação dos integrantes da PMMA.</div>
+<div class="answers">
+<label class="answer"><input name="q94" onchange="saveAnswer(94,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q94" onchange="saveAnswer(94,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><article class="q" data-answer="C" data-q="95" id="q95">
+<div class="q-top"><div class="qnum">95.</div><div class="tag">Lei Estadual 12.896/2026</div></div>
+<div class="qtext">No art. 101, a Lei nº 12.896/2026 estabelece como regra para o Quadro de Praças o ingresso mediante concurso público com exigência de nível superior.</div>
+<div class="answers">
+<label class="answer"><input name="q95" onchange="saveAnswer(95,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q95" onchange="saveAnswer(95,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Lei Estadual 12.896/2026.</span></div>
+</article><div class="stimulus" id="info"><h3>Noções de Informática</h3><p>Julgue os itens de acordo com conceitos de sistemas operacionais, editores, redes, Internet, gerenciamento de arquivos e segurança da informação.</p><svg aria-label="Esquema de rede de computadores" class="svg-art" role="img" viewbox="0 0 720 220">
+<rect fill="#0b1220" height="220" rx="18" width="720"></rect>
+<g font-family="Arial" text-anchor="middle"><circle cx="360" cy="110" fill="#2563eb" r="44"></circle><text fill="white" font-weight="800" x="360" y="116">REDE</text>
+<circle cx="140" cy="55" fill="#10b981" r="30"></circle><text fill="white" font-size="14" x="140" y="61">PC</text>
+<circle cx="140" cy="165" fill="#10b981" r="30"></circle><text fill="white" font-size="14" x="140" y="171">NOTE</text>
+<circle cx="580" cy="55" fill="#f59e0b" r="30"></circle><text fill="#111827" font-size="14" x="580" y="61">SERVIDOR</text>
+<circle cx="580" cy="165" fill="#8b5cf6" r="30"></circle><text fill="white" font-size="14" x="580" y="171">NUVEM</text>
+<g stroke="#cbd5e1" stroke-width="3"><line x1="170" x2="316" y1="55" y2="99"></line><line x1="170" x2="316" y1="165" y2="121"></line><line x1="404" x2="550" y1="99" y2="55"></line><line x1="404" x2="550" y1="121" y2="165"></line></g></g>
+</svg></div><article class="q" data-answer="C" data-q="96" id="q96">
+<div class="q-top"><div class="qnum">96.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Em um sistema Windows, a extensão de um arquivo pode ajudar a identificar o tipo de conteúdo que ele representa, embora sistemas possam ocultar extensões conhecidas.</div>
+<div class="answers">
+<label class="answer"><input name="q96" onchange="saveAnswer(96,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q96" onchange="saveAnswer(96,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="97" id="q97">
+<div class="q-top"><div class="qnum">97.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">No Linux, o caractere “/” é utilizado para indicar o diretório raiz do sistema de arquivos.</div>
+<div class="answers">
+<label class="answer"><input name="q97" onchange="saveAnswer(97,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q97" onchange="saveAnswer(97,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="98" id="q98">
+<div class="q-top"><div class="qnum">98.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">No Microsoft Excel, uma fórmula que comece por “=” pode calcular valores a partir de referências de células e operadores.</div>
+<div class="answers">
+<label class="answer"><input name="q98" onchange="saveAnswer(98,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q98" onchange="saveAnswer(98,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="99" id="q99">
+<div class="q-top"><div class="qnum">99.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">No Microsoft Word, a utilização de estilos pode contribuir para padronizar títulos e facilitar a criação automática de sumário.</div>
+<div class="answers">
+<label class="answer"><input name="q99" onchange="saveAnswer(99,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q99" onchange="saveAnswer(99,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="E" data-q="100" id="q100">
+<div class="q-top"><div class="qnum">100.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Em suítes de escritório, um arquivo de apresentação é destinado exclusivamente a cálculos numéricos e não pode conter textos ou imagens.</div>
+<div class="answers">
+<label class="answer"><input name="q100" onchange="saveAnswer(100,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q100" onchange="saveAnswer(100,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Arquivos de apresentação são destinados a slides e podem conter textos, imagens, gráficos e outros elementos; não são arquivos exclusivos de cálculos.</span></div>
+</article><article class="q" data-answer="C" data-q="101" id="q101">
+<div class="q-top"><div class="qnum">101.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Uma rede de computadores permite a comunicação e o compartilhamento de recursos entre dispositivos conectados.</div>
+<div class="answers">
+<label class="answer"><input name="q101" onchange="saveAnswer(101,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q101" onchange="saveAnswer(101,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="102" id="q102">
+<div class="q-top"><div class="qnum">102.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">A intranet é, em essência, uma rede interna que utiliza tecnologias de rede e protocolos semelhantes aos da Internet, com acesso restrito a uma organização.</div>
+<div class="answers">
+<label class="answer"><input name="q102" onchange="saveAnswer(102,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q102" onchange="saveAnswer(102,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="103" id="q103">
+<div class="q-top"><div class="qnum">103.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">HTTPS acrescenta uma camada de proteção à comunicação web por meio de mecanismos criptográficos, mas não garante, sozinho, que todo conteúdo do site seja verdadeiro ou livre de fraudes.</div>
+<div class="answers">
+<label class="answer"><input name="q103" onchange="saveAnswer(103,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q103" onchange="saveAnswer(103,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="E" data-q="104" id="q104">
+<div class="q-top"><div class="qnum">104.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Em navegadores modernos, o histórico de navegação e os favoritos são elementos idênticos e desempenham exatamente a mesma função.</div>
+<div class="answers">
+<label class="answer"><input name="q104" onchange="saveAnswer(104,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q104" onchange="saveAnswer(104,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Histórico registra páginas/atividades de navegação; favoritos são páginas ou endereços salvos pelo usuário para acesso posterior.</span></div>
+</article><article class="q" data-answer="C" data-q="105" id="q105">
+<div class="q-top"><div class="qnum">105.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">O Mozilla Firefox e o Google Chrome são navegadores de Internet.</div>
+<div class="answers">
+<label class="answer"><input name="q105" onchange="saveAnswer(105,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q105" onchange="saveAnswer(105,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="106" id="q106">
+<div class="q-top"><div class="qnum">106.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Um programa de correio eletrônico pode permitir o envio, recebimento e organização de mensagens.</div>
+<div class="answers">
+<label class="answer"><input name="q106" onchange="saveAnswer(106,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q106" onchange="saveAnswer(106,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="107" id="q107">
+<div class="q-top"><div class="qnum">107.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">O campo CCO de uma mensagem de e-mail permite enviar uma cópia mantendo ocultos, para os demais destinatários, os endereços incluídos nesse campo.</div>
+<div class="answers">
+<label class="answer"><input name="q107" onchange="saveAnswer(107,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q107" onchange="saveAnswer(107,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="E" data-q="108" id="q108">
+<div class="q-top"><div class="qnum">108.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Mecanismos de busca funcionam exclusivamente como armazenamento de arquivos pessoais do usuário e não indexam páginas da web.</div>
+<div class="answers">
+<label class="answer"><input name="q108" onchange="saveAnswer(108,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q108" onchange="saveAnswer(108,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Mecanismos de busca indexam e recuperam informações de páginas e outros conteúdos disponíveis na web.</span></div>
+</article><article class="q" data-answer="C" data-q="109" id="q109">
+<div class="q-top"><div class="qnum">109.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Grupos de discussão e fóruns podem ser usados para troca de mensagens entre participantes em torno de temas específicos.</div>
+<div class="answers">
+<label class="answer"><input name="q109" onchange="saveAnswer(109,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q109" onchange="saveAnswer(109,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="E" data-q="110" id="q110">
+<div class="q-top"><div class="qnum">110.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Redes sociais são necessariamente redes locais físicas e não podem operar por meio da Internet.</div>
+<div class="answers">
+<label class="answer"><input name="q110" onchange="saveAnswer(110,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q110" onchange="saveAnswer(110,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Redes sociais são serviços/plataformas de interação e podem operar pela Internet; não são sinônimo de rede local física.</span></div>
+</article><article class="q" data-answer="C" data-q="111" id="q111">
+<div class="q-top"><div class="qnum">111.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Na computação em nuvem, recursos computacionais podem ser disponibilizados sob demanda pela rede, reduzindo a necessidade de manter toda a infraestrutura localmente.</div>
+<div class="answers">
+<label class="answer"><input name="q111" onchange="saveAnswer(111,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q111" onchange="saveAnswer(111,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="112" id="q112">
+<div class="q-top"><div class="qnum">112.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Cloud storage é um recurso de armazenamento de dados em infraestrutura acessível pela rede, normalmente mantida por um provedor de nuvem.</div>
+<div class="answers">
+<label class="answer"><input name="q112" onchange="saveAnswer(112,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q112" onchange="saveAnswer(112,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="E" data-q="113" id="q113">
+<div class="q-top"><div class="qnum">113.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Renomear um arquivo é necessariamente o mesmo que movê-lo para outra pasta.</div>
+<div class="answers">
+<label class="answer"><input name="q113" onchange="saveAnswer(113,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q113" onchange="saveAnswer(113,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Renomear altera o nome do arquivo; mover altera sua localização em outra pasta ou diretório.</span></div>
+</article><article class="q" data-answer="C" data-q="114" id="q114">
+<div class="q-top"><div class="qnum">114.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Um atalho criado no sistema operacional pode apontar para um arquivo, pasta ou programa sem ser necessariamente uma cópia integral do objeto original.</div>
+<div class="answers">
+<label class="answer"><input name="q114" onchange="saveAnswer(114,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q114" onchange="saveAnswer(114,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="115" id="q115">
+<div class="q-top"><div class="qnum">115.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Malware é termo amplo que engloba softwares maliciosos, incluindo vírus e worms.</div>
+<div class="answers">
+<label class="answer"><input name="q115" onchange="saveAnswer(115,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q115" onchange="saveAnswer(115,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="116" id="q116">
+<div class="q-top"><div class="qnum">116.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Ransomware é uma modalidade de malware que pode bloquear ou criptografar dados e exigir pagamento para tentar viabilizar a recuperação.</div>
+<div class="answers">
+<label class="answer"><input name="q116" onchange="saveAnswer(116,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q116" onchange="saveAnswer(116,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="E" data-q="117" id="q117">
+<div class="q-top"><div class="qnum">117.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Firewall e antivírus são ferramentas exatamente equivalentes e desempenham a mesma função de proteção.</div>
+<div class="answers">
+<label class="answer"><input name="q117" onchange="saveAnswer(117,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q117" onchange="saveAnswer(117,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Errado. Firewall e antivírus têm funções distintas e complementares: o firewall controla/filtra comunicações, enquanto o antivírus busca detectar e tratar softwares maliciosos.</span></div>
+</article><article class="q" data-answer="C" data-q="118" id="q118">
+<div class="q-top"><div class="qnum">118.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">O backup é uma cópia de segurança que pode permitir a recuperação de dados após falhas, exclusões ou incidentes.</div>
+<div class="answers">
+<label class="answer"><input name="q118" onchange="saveAnswer(118,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q118" onchange="saveAnswer(118,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="119" id="q119">
+<div class="q-top"><div class="qnum">119.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Uma estratégia de backup que mantém todas as cópias no mesmo dispositivo físico não elimina completamente o risco de perda causada por falha ou destruição desse dispositivo.</div>
+<div class="answers">
+<label class="answer"><input name="q119" onchange="saveAnswer(119,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q119" onchange="saveAnswer(119,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article><article class="q" data-answer="C" data-q="120" id="q120">
+<div class="q-top"><div class="qnum">120.</div><div class="tag">Noções de Informática</div></div>
+<div class="qtext">Em condições normais, um arquivo enviado para a Lixeira do Windows pode ser restaurado antes que a Lixeira seja esvaziada ou o arquivo seja excluído de modo permanente.</div>
+<div class="answers">
+<label class="answer"><input name="q120" onchange="saveAnswer(120,'C')" type="radio" value="C"/> CERTO</label>
+<label class="answer"><input name="q120" onchange="saveAnswer(120,'E')" type="radio" value="E"/> ERRADO</label>
+</div>
+<div class="feedback"><strong>Correção:</strong> <span class="fb">Correto. A assertiva está de acordo com o conteúdo e os conceitos exigidos em Noções de Informática.</span></div>
+</article>
+</div></section>
+<section class="section" id="folha"><div class="card pad"><div class="exam-head"><div><h2>Folha de respostas</h2><div class="meta">Deixe em branco o item que você não quiser arriscar.</div></div></div>
+<div class="answer-sheet" id="answerSheet"></div>
+<div class="controls" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><button class="btn blue" onclick="grade()">Corrigir meu simulado</button><button class="btn" onclick="clearAll()">Limpar respostas</button><button class="btn dark" onclick="showGabarito()">Mostrar gabarito e comentários</button></div>
+<div id="results" style="display:none"></div>
+</div></section>
+<section class="section" id="gabarito"><div class="card pad"><div class="exam-head"><div><h2>Gabarito comentado</h2><div class="meta">O gabarito fica oculto até você solicitar.</div></div><div class="tag">120 ITENS</div></div><div class="gabarito" id="gabaritoContent"></div></div></section>
+<footer class="footer">
+<div class="container">
+<div class="sdoe-wrap"><svg aria-label="Logo SDOE Study" class="sdoe-logo" role="img" viewbox="0 0 680 190">
+<rect fill="#070a0f" height="190" rx="30" width="680"></rect>
+<rect fill="#0f172a" height="126" rx="30" stroke="#38bdf8" stroke-width="4" width="126" x="32" y="32"></rect>
+<path d="M70 116 V74 L94 51 L118 74 V116 L94 138 Z" fill="none" stroke="#38bdf8" stroke-linejoin="round" stroke-width="9"></path>
+<circle cx="94" cy="95" fill="#22c55e" r="10"></circle>
+<text fill="#f8fafc" font-family="Arial" font-size="48" font-weight="900" x="190" y="90">SDOE</text>
+<text fill="#93c5fd" font-family="Arial" font-size="24" letter-spacing="4" x="194" y="128">STUDY</text>
+<text fill="#94a3b8" font-family="Arial" font-size="18" text-anchor="middle" x="520" y="119">organização • evolução • estudo</text>
+</svg></div>
+<div class="grid2">
+<div><h3 style="color:#fff">SDOE Study · Simulado PMMA 2026</h3><p>Material educacional original para treino no formato de julgamento Certo/Errado, organizado a partir do edital e das retificações localizadas durante a preparação desta apostila.</p></div>
+<div><h3 style="color:#fff">Base documental</h3><p><a href="https://www.cebraspe.org.br/concursos/PM_MA_26" rel="noopener" target="_blank">Página oficial do concurso PMMA 2026 — Cebraspe</a><br/><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14751.htm" rel="noopener" target="_blank">Lei Federal nº 14.751/2023 — Planalto</a><br/><a href="https://www.seplan.ma.gov.br/uploads/seplan/docs/Legislacao-Estadual1.pdf" rel="noopener" target="_blank">Compilação pública do Estatuto PMMA — Lei nº 6.513/1995</a><br/><a href="https://www.escavador.com/diarios/6686198/DOEMA/executivo/2026-06-01?page=2" rel="noopener" target="_blank">Diário Oficial do MA — Lei nº 12.896/2026</a></p></div>
+</div>
+<p class="print-note" style="color:#94a3b8">Notas: este HTML é uma apostila de treino e não é documento oficial do Cebraspe. A distribuição por disciplina dentro de P1/P2 é pedagógica; o edital define oficialmente os blocos de 50 e 70 itens. Itens sobre legislação foram redigidos de forma original e devem ser conferidos com o texto legal vigente no dia da prova.</p>
+</div>
+</footer>
+</main>
+<script>
+const QUESTIONS = Array.from(document.querySelectorAll('.q')).map(el => ({n:Number(el.dataset.q), answer:el.dataset.answer, subject:el.querySelector('.tag')?.textContent.trim() || '', section:Number(el.dataset.q)<=50?'P1':'P2', comment:el.querySelector('.fb')?.textContent.trim() || ''}));
+const TOTAL = 120;
+let remaining = 3*60*60 + 30*60;
+let timerRunning = false;
+let timerId = null;
+const KEY='sdoe_pmma_2026_120_answers_v1';
+
+function qByN(n){ return QUESTIONS.find(q=>q.n===n); }
+function fmtTime(s){ const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),ss=s%60; return [h,m,ss].map((x,i)=>String(x).padStart(2,'0')).join(':'); }
+function renderTimer(){ document.getElementById('timer').textContent=fmtTime(remaining); }
+function tick(){ if(!timerRunning)return; remaining--; renderTimer(); if(remaining<=0){ remaining=0; timerRunning=false; clearInterval(timerId); document.getElementById('timerBtn').textContent='Tempo encerrado'; grade(); alert('Tempo encerrado. O simulado foi corrigido automaticamente.'); } }
+function toggleTimer(){ if(remaining<=0)return; timerRunning=!timerRunning; document.getElementById('timerBtn').textContent=timerRunning?'Pausar':'Continuar'; if(timerRunning){ timerId=setInterval(tick,1000); } else { clearInterval(timerId); } }
+function saveAnswer(n,v){ const a=JSON.parse(localStorage.getItem(KEY)||'{}'); a[n]=v; localStorage.setItem(KEY,JSON.stringify(a)); markSheet(); }
+function getAnswers(){ return JSON.parse(localStorage.getItem(KEY)||'{}'); }
+function restore(){ const a=getAnswers(); for(const [n,v] of Object.entries(a)){ const el=document.querySelector(`input[name="q${n}"][value="${v}"]`); if(el)el.checked=true; } markSheet(); }
+function clearAll(){ localStorage.removeItem(KEY); document.querySelectorAll('input[type=radio]').forEach(i=>i.checked=false); document.querySelectorAll('.q').forEach(q=>q.classList.remove('correct','wrong','blankmark','show-feedback')); document.getElementById('results').style.display='none'; markSheet(); renderTimer(); }
+function markSheet(){ const a=getAnswers(); const box=document.getElementById('answerSheet'); if(!box)return; let s=''; for(let n=1;n<=TOTAL;n++){ const v=a[n]||''; s+=`<div class="as-item"><div><strong>${String(n).padStart(2,'0')}</strong></div><div class="as-pair"><span>${v==='C'?'◉':'○'} C</span><span>${v==='E'?'◉':'○'} E</span></div></div>`; } box.innerHTML=s; }
+function grade(){
+ const a=getAnswers(); let p1={c:0,e:0,b:0},p2={c:0,e:0,b:0};
+ QUESTIONS.forEach(q=>{ const v=a[q.n]; const bucket=q.section==='P1'?p1:p2; if(!v) bucket.b++; else if(v===q.answer) bucket.c++; else bucket.e++; const el=document.querySelector(`.q[data-q="${q.n}"]`); if(el){ el.classList.remove('correct','wrong','blankmark'); el.classList.add(!v?'blankmark':(v===q.answer?'correct':'wrong')); } });
+ const sc=b=>b.c-b.e; const s1=sc(p1),s2=sc(p2),tot=s1+s2;
+ const r=document.getElementById('results'); r.style.display='block'; r.innerHTML=`<div class="score-card">
+  <div class="score-box"><div class="label">P1</div><div class="value">${s1}</div><div class="status">C ${p1.c} · E ${p1.e} · B ${p1.b}</div></div>
+  <div class="score-box"><div class="label">P2</div><div class="value">${s2}</div><div class="status">C ${p2.c} · E ${p2.e} · B ${p2.b}</div></div>
+  <div class="score-box"><div class="label">Total</div><div class="value">${tot}</div><div class="status">máximo teórico: 120</div></div>
+  <div class="score-box"><div class="label">Corte do edital</div><div class="value" style="font-size:22px">10 / 21 / 36</div><div class="status">P1 / P2 / total</div></div>
+ </div>`;
+ QUESTIONS.forEach(q=>{ const el=document.querySelector(`.q[data-q="${q.n}"]`); if(el){ const fb=el.querySelector('.fb'); const v=a[q.n]; fb.textContent=`[${q.answer}] ${q.comment}`; if(v)el.classList.add('show-feedback'); } });
+ r.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function showGabarito(){ const box=document.getElementById('gabaritoContent'); if(box.classList.contains('show')){ box.classList.remove('show'); return; } let s=''; QUESTIONS.forEach(q=>{ s+=`<div class="g-item"><span class="g-judge ${q.answer==='C'?'c':'e'}">${String(q.n).padStart(2,'0')} · ${q.answer==='C'?'CERTO':'ERRADO'}</span> — <strong>${q.subject}</strong><br><span>${q.comment}</span></div>`; }); box.innerHTML=s; box.classList.add('show'); box.parentElement.parentElement.scrollIntoView({behavior:'smooth',block:'start'}); }
+function scrollToTop(){ window.scrollTo({top:0,behavior:'smooth'}); }
+renderTimer(); restore(); markSheet();
+</script>
+</body>
+</html>
